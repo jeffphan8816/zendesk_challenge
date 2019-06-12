@@ -1,0 +1,5 @@
+<h1>All tickets</h1>
+<% @tickets.each do |t| %>
+  <p>Ticket: <%=t['id']%> | Subject: <%= t['subject'] %> | Opened by: <%=t['submitter_id']%> | On: <%=t['created_at']%></p> 
+<%end%>
+<%= link_to 'Back to home page', root_path %>

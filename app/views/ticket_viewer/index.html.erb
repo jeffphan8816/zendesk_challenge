@@ -1,0 +1,19 @@
+<div class = "container">
+  <h1>View single ticket</h1>
+  <%= form_tag 'singleticket' do %>
+
+  <h4>Id of ticket</h4>
+  <div class="field form-control">
+    <%= text_field_tag :id%>
+  </div>
+  
+  <div class="actions">
+    <%= submit_tag "View", class: "btn btn-primary"%>
+  </div>
+<% end %>
+</div>
+
+
+
+<%= link_to 'Click here to view all tickets', alltickets_path %>
+

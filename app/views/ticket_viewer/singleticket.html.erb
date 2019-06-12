@@ -1,0 +1,4 @@
+<h1>Single Ticket</h1>
+<p>Ticket: <%= @ticket['id']%> | Subject: <%= @ticket['subject'] %> | Opened by: <%=@ticket['submitter_id']%> | On: <%=@ticket['created_at']%></p> 
+
+<%= link_to 'Back to home page', root_path %>
