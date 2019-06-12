@@ -34,7 +34,7 @@ class TicketViewerController < ApplicationController
   def singleticket
     base_url = 'https://jeffphan8816.zendesk.com/api/v2/tickets'
     ticketid = params.permit(:id)
-    base_url = base_url+'/'+ticketid['id']
+    base_url = base_url + '/' + ticketid['id']
     auth = {:username => "jeffphan8816@gmail.com", :password => "Aq123ew4rft6yh@@"}
     @response = HTTParty.get(base_url, :basic_auth => auth).parsed_response
     if !@response['error'].nil?
@@ -54,10 +54,6 @@ class TicketViewerController < ApplicationController
         @tickets.append(t)
       end
     end
-  end
-  
-  def check_empty_input
-    
   end
   
 end
