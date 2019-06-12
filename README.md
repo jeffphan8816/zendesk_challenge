@@ -13,6 +13,6 @@ Candidate email: jeffphan8816@gmail.com
   * Test cases for routing and flash messages for errors.
   
 - What I can improve in the future:
- * Adding CSS, fixing layout for UI.
- * Reducing cohesion for functions in TicketViewerController: split basic_auth into seperate function.
- * Avoding duplicating code block (it happens in both functions in TicketViewerController).
+  * Adding CSS, fixing layout for UI.
+  * Reducing cohesion for functions in TicketViewerController: split basic_auth into seperate function.
+  * Avoding duplicating code block (it happens in both functions in TicketViewerController).
